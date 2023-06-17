@@ -1,0 +1,167 @@
+
+.admin__wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    background: #fff;
+    height: auto;
+    text-align: center;
+    margin: 0px auto;
+}
+.admin__wrapper h1{
+    margin: 40px 40px;
+}
+.admin__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.admin__header button{
+    margin-right: 40px;
+    padding: 15px;
+    border-radius: 15px;
+    background:#fff;
+    font-size: 16pt;
+    border: 2px solid #e3e3e3;
+    box-shadow: 0px 0px 10px 5px #dfdfdf;
+    transition: all .1s ease-in;
+    &:hover{
+        transform: translateY(5px);
+        box-shadow: 0px 0px 10px 5px #c7c7c7;
+    }
+
+}
+.listItem{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.item{
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: minmax(320px,380px);
+    grid-template-rows: 260px repeat(4, 60px) 55px 60px;
+    margin: 40px 40px;
+    box-shadow: 0px 0px 10px 5px #ababab;
+}
+picture img{
+    width: 55%;
+    margin-top: 20px;
+}
+.itemType,.itemsize,.itemcategory{
+    display: flex;
+    background-color: #f3f3f3;
+    justify-content: center;
+    align-items: center;
+}
+.item p{
+    font-size: 22pt;
+}
+
+
+.itemsize select, .itemType select, .itemcategory select{
+    width: 260px;
+    height: 40px;
+    background: #ffff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.tools{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tools button{
+    padding: 10px;
+    width: 140px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    border: 2px solid #fe5f1e;;
+    background: #fff;
+    color: #fe5f1e;
+    font-size: 16pt;
+}
+.tools button:hover{
+    background: #fe5f1e;
+    color: #fff;
+}
+.inputName{
+    height: 40px;
+    width:320px;
+    text-align: center;
+    font-size: 16pt;
+    border-radius:10px;
+    border: 1px dashed #fe5f1e;
+    margin: 10px auto;
+}
+.inputValue{
+    text-align: center;
+    font-size: 16pt;
+    width: min-content;
+    height: 40px;
+    justify-content: center;
+    margin: 10px auto;
+    border-radius:10px;
+    border: 1px dashed #fe5f1e;
+}
+.modalWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(193, 193, 193, 0.6);
+    z-index: 100;
+}
+.modalPizzas{
+    display: grid;
+    grid-template-columns: minmax(320px,380px);
+    grid-template-rows:630px;
+    justify-content: center;
+    height: 100%;
+    align-content: center;
+}
+.modalPizzas .item{
+    margin: 0px;
+    align-items: center;
+    justify-items: center;
+    box-shadow: none;
+    grid-template-rows: 240px repeat(4, 60px) 55px;
+}
+.modalPizzas .item .tools{
+    display: none;
+}
+.cartAdd{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.closeModal{
+    position: relative;
+    left: 89%;
+    top: 2%;
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    border: 2px dotted #c7c7c7;
+}
+.addButton{
+    margin: 5px auto;
+    width: 140px;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid #fe5f1e;
+    background: #fff;
+    font-size: 16pt;
+    color: #fe5f1e;
+}
+.addButton:hover{
+    background: #fe5f1e;
+    color:#fff;
+}

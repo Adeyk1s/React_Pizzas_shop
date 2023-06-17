@@ -1,0 +1,11 @@
+.error-block{
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.error-block p{
+    font-size: 46px;
+    color: #000;
+}
